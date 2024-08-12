@@ -18,6 +18,7 @@ Dentro del puerto 80 tendremos lo siguiente
 <br>
 Con gobuster no encontraremos nada interesante por lo tanto revisaremos a fondo la informacion que nos ofrece la pagina web
 <br>
+<br>
 Tendremos dos usuarios en estos momentos: Juan y Carlota
 
 # FUERZA BRUTA CON HYDRA
@@ -36,7 +37,9 @@ Ya que tenemos un usuario y contraseña haremos conexion al puerto 22.
 <br> 
 Nos aparecera este WARNING por lo que copiaremos y pegaremos el comando que no dice
 <br> 
+<br>
 ![image](https://github.com/user-attachments/assets/fbfe1274-b813-407f-9e81-e5c7233d71d5)
+<br>
 <br>
 Comando: `ssh-keygen -f '/root/.ssh/known_hosts' -R '172.17.0.2'`
 <br>
@@ -54,6 +57,7 @@ Al tener esta imagen deberemos montar un servidor interno para poder descargar l
 <br>
 ## Montar server y descarga de imagen: 
 `python3 -m http.server 9999` -> Correremos este comando dentro de la carpeta que contiene la imagen
+<br>
 <br>
 En la terminal de nuestra maquina atacante pondremos el siguiente comando 
 <br>
@@ -78,6 +82,7 @@ En esta oportunidad nos dan una pista de que es un codigo en base24 (b24) por lo
 <br>
 Usaremos el codigo `cat secret.txt | base24 -d`
 <br>
+<br>
 ![image](https://github.com/user-attachments/assets/5d826c80-e0cc-4aac-9478-48051590a622)
 <br>
 Obtendremos una nueva cadena de texto <b> "eslacasadepinypon" </b> intentemos usar esta cadena de texto en el servidor SSH
@@ -91,13 +96,13 @@ Haremos un `sudo -l` para saber si tenemos comandos con privilegios y veremos lo
 ![image](https://github.com/user-attachments/assets/89fa0832-0552-4ed3-8620-0bb1c5de2f21)
 <br>
 Por lo que accederemos a la pagina [GTFOBins]([url](https://gtfobins.github.io/gtfobins/ruby/#sudo))
-<br>
+<br> <br>
 Dentro de esta buscaremos <b>RUBY</b> y buscaremos la opcion de <b>SUDO</b>
-<br>
+<br> <br>
 Buscaremos el script que nos ayudara a escalar privilegios: `sudo ruby -e 'exec "/bin/sh"'`
-<br>
+<br> <br>
 Pegaremos el script 
-<br>
+<br> <br>
 ENHORABUENA SOMOS ROOT !!
 
 
