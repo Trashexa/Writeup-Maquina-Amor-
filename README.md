@@ -99,7 +99,7 @@ Haremos un `sudo -l` para saber si tenemos comandos con privilegios y veremos lo
 <br>
 ![image](https://github.com/user-attachments/assets/89fa0832-0552-4ed3-8620-0bb1c5de2f21)
 <br>
-Por lo que accederemos a la pagina [GTFOBins]([url](https://gtfobins.github.io/gtfobins/ruby/#sudo))
+Por lo que accederemos a la pagina [GTFOBins](https://gtfobins.github.io/gtfobins/ruby/#sudo)
 <br> <br>
 Dentro de esta buscaremos <b>RUBY</b> y buscaremos la opcion de <b>SUDO</b>
 <br> <br>
