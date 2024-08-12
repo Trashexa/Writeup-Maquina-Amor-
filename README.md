@@ -43,12 +43,15 @@ Nos aparecera este WARNING por lo que copiaremos y pegaremos el comando que no d
 <br>
 Comando: `ssh-keygen -f '/root/.ssh/known_hosts' -R '172.17.0.2'`
 <br>
+<br>
 Luego de esto volveremos a hacer la conexion al servidor SSH y ahora si podremos entrar
+<br>
 <br>
 Probaremos hacer un `sudo -l` y veremos que NO tenemos ningun comando con privilegios como root
 
 # EXPLORACION DE CARPETA
 Al no tener un acceso facil al usuario root, buscaremos en las carpetas archivos que nos puedan servir
+<br>
 <br>
 Encontraremos dentro de la ruta `home/carlota/Desktop/fotos/vacaciones` un archivo llamado `imagen.jpg`
 
@@ -72,6 +75,7 @@ Para esto usaremos primero exiftool para ver los metadatos de la imagen, en este
 Usaremos entonces la herramienta <b>steghide</b> para ver si podemos extraer algun dato oculto
 <br>
 `steghide extract -sf imagen.jpg`
+<br>
 <br>
 Encontraremos el siguiente archivo: <b>secret.txt</b> que contiene la siguiente cadena de texto:
 <br>
