@@ -91,7 +91,7 @@ Usaremos el codigo `cat secret.txt | base24 -d`
 <br>
 Obtendremos una nueva cadena de texto <b> "eslacasadepinypon" </b> intentemos usar esta cadena de texto en el servidor SSH
 
-# DESENLACE Y FINAL
+# DESENLACE FINAL
 Accederemos al usuario oscar con un `su oscar` y colocaremos la contraseña anteriormente encontrada
 <br>
 Haremos un `sudo -l` para saber si tenemos comandos con privilegios y veremos lo siguiente:
